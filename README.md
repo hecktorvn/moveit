@@ -1,34 +1,142 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img align="right" src="public/logo-full.svg" width="35%" alt="Move.it">
 
-## Getting Started
+--- 
 
-First, run the development server:
+<p>
+  <a href="https://www.linkedin.com/in/hecktorvn/">
+      <img alt="Hecktor Viegas" src="https://img.shields.io/badge/-Hecktor Viegas-4e5acf?style=flat&logo=Linkedin&logoColor=white" />
+  </a>
+  
+  <img src="https://img.shields.io/badge/Feito%20por-HECKTOR%20VIEGAS-6E40C9?style=flat-square&color=blue">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hecktorvn/moveit?style=flat-square&color=blue">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/hecktorvn/moveit?style=flat-square&color=blue">
+  <img alt="GitHub" src="https://img.shields.io/github/license/hecktorvn/moveit?style=flat-square&color=blue">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hecktorvn/moveit?style=flat-square&color=blue">
+</p>
+
+<div align="center">
+  <sub>O <strong>MoveIt</strong> foi desenvolvido com ❤︎ pelo
+    <a href="https://github.com/hecktorvn">Hecktor Viegas</a>
+  </sub>
+</div>
+
+# :pushpin: Tópicos 
+
+[Sobre o Move.it](#sobre-o-move.it)
+
+[Tecnologias](#tecnologias)
+
+[Instalação e uso](#instalação-e-uso)
+
+[Licença](#licença)
+
+<br>
+
+# :eyes: Demo
+
+Demo: <http://moveit-hecktorvn.vercel.app/>
+
+<br>
+
+# :page_with_curl: Sobre o Move.it
+
+O Move.it é um App que utiliza a técnica de [pomodoro](https://pt.wikipedia.org/wiki/T%C3%A9cnica_pomodoro), com o objetivo de melhorar sua produtividade e foco. Desenvolvido durante a Next Level Week #4 da [Rocketseat](https://rocketseat.com.br/).
+
+<br>
+
+<p align="center">
+  <img src="public/screenshots/capa.png" alt="Página inicial">
+</p>
+
+# :computer: Tecnologias
+
+Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
+
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [VS Code](https://code.visualstudio.com/) com [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) e [EditorConfig](https://editorconfig.org/)
+
+<br>
+
+# :construction_worker: Instalação e uso
 
 ```bash
-npm run dev
-# or
+# Abra um terminal e copie este repositório com o comando
+git clone https://github.com/hecktorvn/moveit.git
+# ou use a opção de download.
+
+# Entre na pasta web com 
+cd moveit
+
+# Instale as dependências
+yarn install
+ou
+npm install
+
+# Rode o aplicação
 yarn dev
+ou
+npm run dev
+
+# Acesse http://localhost:3000 no seu navagador.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# :closed_book: Licença
+<a href="https://opensource.org/licenses/MIT">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-6E40C9?style=flat-square">
+</a>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br>
 
-## Learn More
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
-To learn more about Next.js, take a look at the following resources:
+Feito com :purple_heart: by [Hecktor Viegas](https://github.com/hecktorvn) 
+Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [VS Code](https://code.visualstudio.com/) com [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) e [EditorConfig](https://editorconfig.org/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br>
 
-## Deploy on Vercel
+# :construction_worker: Instalação e uso
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Abra um terminal e copie este repositório com o comando
+git clone https://github.com/hecktorvn/moveit.git
+# ou use a opção de download.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Entre na pasta web com 
+cd moveit
+
+# Instale as dependências
+yarn install
+# ou
+npm install
+
+# Rode o aplicação
+yarn dev
+# ou
+npm run dev
+
+# Acesse http://localhost:3000 no seu navagador.
+```
+
+<br>
+
+
+# :closed_book: Licença
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+
+---
+
+<div align="center">
+  Feito com :purple_heart: by [Hecktor Viegas](https://github.com/hecktorvn) 
+</div>

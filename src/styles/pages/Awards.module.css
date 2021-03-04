@@ -1,0 +1,155 @@
+.container {
+    height: 100vh;
+
+    display: flex;
+    width: 100vw;
+}
+
+.containerLeadborad {
+    flex: 1;
+    overflow: auto;
+    padding-bottom: 2rem;
+}
+
+.containerLeadborad > section {
+    flex: 1;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.containerLeadborad > section > h2 {
+    font-size: 2.25rem;
+    color: var(--title);
+    font-weight: 600;
+}
+
+.leaderboard {
+    list-style: none;
+    display: flex;
+
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.leaderboard li.header {
+    background: transparent;
+    font-weight: 600;
+    opacity: 0.5;
+    padding-bottom: 1rem;
+}
+
+.leaderboard li {
+    background: var(--white);
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 4.5rem 50% 1fr 1fr;
+    grid-gap: 1rem;
+
+    font-size: 0.87rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderboard li > div {
+    padding: 1rem 0;
+}
+
+.leaderboard li > div:first-child {
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    border-right: 3px solid var(--background);
+}
+
+.leaderboard li .profile{
+    display: flex;
+    gap: 1rem;
+
+    align-items: center;
+}
+
+.leaderboard li .profile img {
+    height: 3.65rem;
+    width: 3.65rem;
+
+    border-radius: 50%;
+}
+
+.leaderboard li .profile strong {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--title);
+    margin-bottom: 0.3rem;
+}
+
+.leaderboard li .profile div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leaderboard li .profile div > p {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.leaderboard li .profile div > p img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.leaderboard li > p strong {
+    color: var(--blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .container ul li.header {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .leaderboard li{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 0;
+    }
+
+    .leaderboard li .profile {
+        min-width: 100%;
+        padding-left: 1rem;
+        border-bottom: 1px solid var(--background);
+    }
+
+    .leaderboard li > div:first-child {
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        padding: 1rem;
+    }
+
+    .leaderboard li > p {
+        font-size: 1rem;
+        flex: 1;
+        justify-content: center;
+        display: flex;
+        padding: 0.5rem;
+    }
+}

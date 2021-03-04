@@ -1,0 +1,34 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, var(--white) 0%, rgba(255, 255, 255, .7) 100%);
+    box-shadow: 0 0 3px #2c3c4424;
+    border-radius: 5px 5px 0 0;
+    padding: 1rem;
+}
+
+.profileContainer > img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #3f485a14;
+}
+
+.profileContainer div {
+    margin-left: 1.5rem;
+}
+
+.profileContainer div strong {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.profileContainer div p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.profileContainer div p img {
+    margin-right: 0.5rem;
+}

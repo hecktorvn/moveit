@@ -1,0 +1,129 @@
+.challengeBoxContainer {
+    height: 100%;
+
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .05);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    text-align: center;
+}
+
+.challengeBoxContainer footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+}
+
+.challengeBoxContainer footer button {
+    height: 5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    color: var(--white);
+    border-top: 1px solid var(--gray-line);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: background 0.2s;
+}
+
+.challengeBoxContainer footer button:not(:last-child) {
+    border-right: 1px solid var(--gray-line);
+}
+
+.challengeBoxContainer footer button.challengeFailedButton {
+    background: #FFF5F5;
+    color: var(--red);
+}
+
+.challengeBoxContainer footer button.challengeSucceededButton {
+    background: #F7FFF5;
+    color: var(--green);
+}
+
+.challengeBoxContainer footer button.challengeFailedButton:hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+.challengeBoxContainer footer button.challengeSucceededButton:hover {
+    background: var(--green);
+    color: var(--white);
+}
+
+
+.challengeNotActive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+.challengeNotActive strong {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 80%;
+}
+
+.challengeNotActive p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.4;
+    max-width: 70%;
+    margin-top: 3rem;
+}
+
+.challengeNotActive p > img {
+    max-width: 2rem;
+}
+
+
+.challengeActive {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+}
+
+.challengeActive header {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0 2rem 1.5rem;
+    border-bottom: 1px solid var(--gray-line);
+}
+
+.challengeActive main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.challengeActive main strong {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--title);
+    margin: 2.5rem 0 1rem;
+}
+
+.challengeActive main p {
+    line-height: 1.5;
+}

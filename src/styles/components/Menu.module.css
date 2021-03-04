@@ -1,0 +1,140 @@
+.container {
+    width: 7rem;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(180deg, var(--white) 60%, rgba(255, 255, 255, 0) 160%);
+    filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
+}
+
+.container .logo {
+    margin: 2rem;
+}
+
+.container section {
+    flex: 1;
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container section > ul {
+    width: 100%;
+    list-style: none;
+}
+
+.container section > ul li {
+    width: 100%;
+    padding: 0.5rem;
+    min-height: 4rem;
+    background: transparent;
+
+    border: none;
+    border-left: .3rem solid transparent;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    margin-bottom: 1rem;
+}
+
+.container section > ul li:not(.active):hover {
+    background: rgba(0, 0, 0, .03);
+    cursor: pointer;
+}
+
+.container section > ul li:not(.active):hover svg path,
+.container section > ul li:not(.active):hover svg g {
+    stroke: var(--text);
+    opacity: 1;
+}
+
+.container section > ul li.active:before {
+    content: '';
+    width: 7px;
+    background-color: var(--blue);
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    position: absolute;
+    left: -0.31rem;
+    top: 0;
+}
+
+.active svg path {
+    stroke: var(--blue);
+}
+
+.active svg g {
+    opacity: 1;
+}
+
+
+.buttonLogout {
+    padding: 0.5rem 1rem;
+    background: var(--blue);
+    
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    outline: none;
+
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.buttonLogout:hover {
+    background: var(--blue-dark);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100vw;
+        height: 7rem;
+        flex-direction: row;
+        background: linear-gradient(90deg, var(--white) 50%, rgba(255, 255, 255, 0) 150%);
+    }
+
+    .container section > ul {
+        height: 100%;
+        flex-direction: row;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container section {
+        height: 100%;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .container section > ul li {
+        width: 5rem;
+        height: 100%;
+        border-bottom: .3rem solid transparent;
+        border-left: none;
+        margin: 0;
+    }
+
+    .container section > ul li.active:before{
+        height: 7px;
+        width: 100%;
+        bottom: -0.31rem;
+        border-radius: 10px 10px 0 0;
+
+        left: 0;
+        top: auto;
+    }
+}

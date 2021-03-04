@@ -1,0 +1,22 @@
+.completedChallengesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 3.5rem;
+    padding: 1rem;
+    border-top: 4px solid #ffffff73;
+
+    font-weight: 500;
+    background: var(--title);
+    border-radius: 0 0 5px 5px;
+    color: var(--white);
+}
+
+.completedChallengesContainer span:first-child {
+    font-size: 1.25rem;
+}
+
+.completedChallengesContainer span:last-child {
+    font-size: 1.5rem;
+}
